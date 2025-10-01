@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="login container-fluid">
+      <div class="row min-vh-100">
+        <!-- LEFT SIDE -->
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center p-4">
+          <div class="w-100" style="max-width: 400px;">
+            <div class="text-center mb-4">
+              <h1>Welcome back</h1>
+              <p>Welcome back to our cakeshop!</p>
+            </div>
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter your email"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="Password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="Password"
+                  placeholder="Enter your password"
+                />
+              </div>
+              <div class="d-flex justify-content-between mb-3">
+                <a href="#" class="text-decoration-none">Forgot password?</a>
+              </div>
+              <div class="d-grid gap-2 mb-3">
+                <a href="page2.html" class="btn btn-primary">Sign In</a>
+                <button class="btn btn-outline-primary" type="button">
+                  <img src="img/google-logo-9824 1.png" alt="Google" style="width:18px; margin-right:6px;">
+                  Sign In With Google
+                </button>
+              </div>
+              <div class="text-center">
+                <span>Don’t have an account?
+                  <a href="#" class="text-decoration-none">Sign up for free</a>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-12 col-md-6 d-none d-md-block p-0">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade h-100" data-bs-ride="carousel">
+            <div class="carousel-inner h-100">
+              <div class="carousel-item active h-100">
+                <img src="img/kue1.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="kue1" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fresh from oven</h5>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="img/kue2.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="kue2" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>With a magic touch</h5>
+                </div>
+              </div>
+              <div class="carousel-item h-100">
+                <img src="img/kue3.jpeg" class="d-block w-100 h-100 object-fit-cover" alt="kue3" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Your Mood Booster!!!</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-light text-center py-3 mt-4">
+      <p class="mb-0">&copy; 2025 CakeShop. All rights reserved.</p>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
